@@ -74,10 +74,26 @@ img{
 
 }
 
+.Preparation_time > ul{
+
+    list-style: hsl(310, 50%, 98%);
+
+}
+
 .Preparation_time > ul > li{
 
+    list-style: none;
     font-size: 14px;
     line-height: 2.3;
+
+}
+
+.Preparation_time > ul > li::before{
+
+    content: "•"; color: hsl(333, 25%, 35%);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 
 }
 
@@ -93,20 +109,38 @@ img{
 .Ingredients > h3{
 
     font-size: 1.8rem;
-    font-weight: 400;
+    font-weight: 300;
+    color: hsl(14, 45%, 36%);
+
+}
+
+.Ingredients > ul{
+
+    padding-inline-start: 20px
 
 }
 
 .Ingredients > ul > li{
 
+    list-style: none;
     font-size: 14px;
     line-height: 2.3;
 
 }
 
+.Ingredients > ul > li::before{
+
+    content: "•"; color: hsl(333, 25%, 35%);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    padding-right: 1rem;
+
+}
+
 hr {
     border: none;
-    height: 1px;
+    height: 0.5px;
     background-color: #000;
     margin: 20px 0;
 }
@@ -114,25 +148,42 @@ hr {
 .Instructions > h3 {
 
     font-size: 1.8rem;
-    font-weight: 400;
+    font-weight: 300;
+    color: hsl(14, 45%, 36%);
 
 }
 
 .Instructions > ol{
 
-    list-style-position: outside;
-    padding-inline-start: 20px
-      
-
+    padding-inline-start: 0px;
 }
 
 .Instructions > ol > li{
 
+    
     font-size: 14px;
     padding-left: 1em;
+    list-style: none;
+    counter-increment: li;
+
+}
+
+.Instructions > ol > li::before{
+
+    content: counter(li); color: hsl(14, 45%, 36%);
+    display: inline-block;
+    width: 2em;
+    margin-left: -1em;
 
 }
   
+.Nutrition > h3 {
+
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: hsl(14, 45%, 36%);
+
+}
 
 .Nutrition_table{
 
@@ -146,7 +197,13 @@ hr {
     display: flex;
     justify-content: start;
     align-items: center;
-    border-bottom: 1px solid hsl(var(--clr-nutmeg));
-    padding : .5rem 2rem;
+    border-bottom: 1px solid grey;
+    padding : .1rem 2rem;
+
+}
+
+.brown{
+
+    color: hsl(14, 45%, 36%);
 
 }
