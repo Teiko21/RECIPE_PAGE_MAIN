@@ -1,5 +1,13 @@
+*{
+
+    box-sizing: border-box;
+
+}
+
 body{
 
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -9,6 +17,18 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+}
+
+h1, h3{
+
+    font-family: 'Young Serif', serif;
+
+}
+
+h1{
+
+    font-weight: 400;
 
 }
 
@@ -43,8 +63,8 @@ img{
 
 .first_paragraph > p{
 
-    font-size: 16px;
-
+    font-size: 14px;
+    padding-bottom: 21px;
 }
 
 .Preparation_time{
@@ -54,9 +74,79 @@ img{
 
 }
 
-.Preparation_time > h3 {
+.Preparation_time > ul > li{
 
+    font-size: 14px;
+    line-height: 2.3;
+
+}
+
+.Preparation_time > h2 {
+
+    font-size: 16px;
+    font-family: 'Outfit', sans-serif;
     color:hsl(333, 25%, 35%);
     padding-left: 23px;
+
+}
+
+.Ingredients > h3{
+
+    font-size: 1.8rem;
+    font-weight: 400;
+
+}
+
+.Ingredients > ul > li{
+
+    font-size: 14px;
+    line-height: 2.3;
+
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #000;
+    margin: 20px 0;
+}
+
+.Instructions > h3 {
+
+    font-size: 1.8rem;
+    font-weight: 400;
+
+}
+
+.Instructions > ol{
+
+    list-style-position: outside;
+    padding-inline-start: 20px
+      
+
+}
+
+.Instructions > ol > li{
+
+    font-size: 14px;
+    padding-left: 1em;
+
+}
+  
+
+.Nutrition_table{
+
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+.Nutrition_table > p{
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 1px solid hsl(var(--clr-nutmeg));
+    padding : .5rem 2rem;
 
 }
